@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">获取触发事件的元素</button>
+    <script>
+        var btn = document.getElementById('btn');
+        btn.onclick = function (e) {
+            var obj = event.target;
+            console.log(obj.nodeName);
+            console.log(obj.id);
+            console.log(obj.className);
+            console.log(obj.innerText);
+        }
+    </script>
+</body>
+
+</html>

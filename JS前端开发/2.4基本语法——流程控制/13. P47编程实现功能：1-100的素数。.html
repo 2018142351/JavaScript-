@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 13. P47编程实现功能：1-100的素数。
+    素数概念：除了1和它本身以外不再有其他的因数，最小的素数为2。 -->
+    <script>
+        // 遍历1~100之间的数据
+        for (var n = 1; n <= 100; n++) {
+            if (n == 1) {
+                continue;
+            } else {
+                var flag = true;// 用来保存n是否为素数，默认n为素数
+                for (var j = 2; j < n; j++) {
+                    if (n % j == 0) {// 若能被j整除，则n不是素数
+                        flag = false;
+
+                    }
+                }
+            }
+            if (flag) {// 如果是质数，在网页中打印该数据
+                document.write("100以内的素数有：" + n + '<br/>');
+            }
+        }
+    </script>
+</body>
+
+</html>

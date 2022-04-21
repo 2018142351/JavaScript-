@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- for (初始化变量; 条件表达式; 操作表达式) {//循环体} -->
+    <script>
+        // 编程实现功能
+        // 用户输入行数和列数，之后在控制台打印出用户输入行数和列数的星星
+        var star = '';
+        var row = prompt('请输入行数');
+        var col = prompt('请输入列数');
+        for (var j = 1; j <= col; j++) {
+            for (var i = 1; i <= row; i++) {
+                star += '⭐';
+            }
+            star += '\n';
+        }
+        console.log(star);
+    </script>
+</body>
+
+</html>

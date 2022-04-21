@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box">box</div>
+    <div class="bar">bar</div>
+    <div name="main">main</div>
+    <script>
+        console.log(document.getElementById('box'));
+        console.log(document.getElementsByClassName('bar'));
+        console.log(document.getElementsByTagName('div'));
+        console.log(document.getElementsByName('main'));
+        console.log(document.querySelector('div'));
+        console.log(document.querySelector('#box'));
+        console.log(document.querySelector('.bar'));
+        console.log(document.querySelector('div[name]'));
+        console.log(document.querySelector('div.bar'));
+        console.log(document.querySelector('div#box'));
+    </script>
+</body>
+
+</html>

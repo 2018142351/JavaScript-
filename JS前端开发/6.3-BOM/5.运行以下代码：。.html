@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="点击查看length" onclick="fn()" />
+    <input type="button" value="点击跳转" onclick="fun()" />
+    <input type="button" value="点击forward" onclick="func()" />
+    <script>
+        function fn() {
+            var n = history.length
+            alert(n)
+        }
+        function fun() {
+            location.href = '1.html'
+            //history.back()
+        }
+        function func() {
+            history.forward()
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var res = [];
+        var arr = ['a', 'b', 'a', 'c', 'a', 'd'];//待检索的数组
+        var search = 'a';//要查找的数组元素
+        var i = arr.indexOf(search);
+        while (i !== -1) {
+            res.push(i);
+            i = arr.indexOf(search, i + 1);
+        }
+        console.log('元素' + search + '在数组中的所在位置为' + res);
+    </script>
+</body>
+
+</html>

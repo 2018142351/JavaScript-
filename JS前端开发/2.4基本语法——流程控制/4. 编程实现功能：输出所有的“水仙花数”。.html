@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //   for (初始化变量; 条件表达式; 操作表达式) {//循环体}
+        // 4. 编程实现功能：输出所有的“水仙花数”。
+        //     所谓“水仙花数”是指一个3位数，其各位数字立方和等于该数的本身。
+        //     例如，153就是一个水仙花数，因为153 = 13 + 53 + 33。
+        document.write('水仙花数有:')
+        for (var i = 100; i < 1000; i++) {
+            var a = i % 10 //提取个位数
+            var b = (i % 10) % 10 //提取十位数
+            b = parseInt(b)
+            var c = i / 100 //提取百位数
+            c = parseInt(c)
+            if (i == a * a + b * b * b + c * c * c) {
+                document.write(i + ',')
+            }
+        }
+    </script>
+</body>
+
+</html>

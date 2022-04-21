@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //构造函数名字首字母要大写
+        //函数内的属性和方法前面需要添加this，表示当前对象的属性和方法
+        //构造函数中不需要return返回结果
+        //当我们创建对象的时候，必须要用new来调用构造函数
+        function Star(uname, age, sex) {
+            this.name = uname;
+            this.age = age;
+            this.sex = sex;
+            this.sing = function (sang) {
+                console.log(sang);
+            }
+        }
+        var ldh = new Star('刘德华', 18, '男');
+        console.log(typeof ldh)//object对象，调用函数返回的是对象
+        console.log(ldh.name);
+        console.log(ldh['sex']);
+        ldh.sing('冰雨');
+        //把冰雨传给了sang
+        var zxy = new Star('张学友', 19, '男');
+    </script>
+</body>
+
+</html>

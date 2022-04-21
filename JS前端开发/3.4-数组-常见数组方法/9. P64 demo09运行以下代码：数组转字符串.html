@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr = ['sky', 'wind', 'snow', 'sun'];
+        //从数组下标2的位置开始时，删除2个元素
+        arr.splice(2, 2);
+        console.log(arr);
+        //从数组下标1的位置开始，删除1个元素后，在添加snow元素
+        arr.splice(1, 1, 'snow');
+        console.log(arr);
+        //指定下标4大于数组的长度，则直接在数组末尾添加hail和sun元素
+        arr.splice(4, 0, 'hail', 'sum');
+        console.log(arr);
+        //从数组下标3的位置开始，添加数组、null、undefined和空数组
+        arr.splice(3, 0, ['lala', 'yaya'], null, undefined, []);
+        console.log(arr);
+    </script>
+</body>
+
+</html>

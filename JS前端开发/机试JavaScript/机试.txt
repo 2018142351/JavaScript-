@@ -1,0 +1,74 @@
+ <script>
+        function fn1(arr) {
+            for (var i = 1; i < arr.length; i++) {
+                for (var j = 0; j < arr.length - i; j++) {
+                    if (arr[j] > arr[j + 1]) {
+                        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]
+                    }
+                }
+            }
+            console.log(arr)
+        }
+        var arr = [5, 7, -1, 9, 11, 3, 6, 33, 12]
+        fn1(arr)
+    </script>
+//
+<script>
+        function fn2(arr) {
+            for (var i = 1; i < arr.length; i++) {
+                for (var j = i; j > 0; j--) {
+                    if (arr[j - 1] > arr[j]) {
+                        [arr[j - 1], arr[j]] = [arr[j], arr[j - 1]]
+                    }
+                }
+            }
+            console.log(arr)
+        }
+        var arr = [5, 7, -1, 9, 11, 3, 6, 33, 12]
+        fn2(arr)
+    </script>
+//
+ <script>
+        function fn3(m, n) {
+            if (n == m) {
+                return m
+            }
+            return n + fn3(m, n - 1)
+        }
+        console.log(fn3(5, 100))
+    </script>
+//
+ <script>
+        function fn4(m, n) {
+            if (n == m) {
+                return m
+            }
+            return n * fn4(m, n - 1)
+        }
+        console.log(fn4(5, 10))
+    </script>
+//
+  <script>
+ function randomNum(m, n) {
+            return Math.floor(Math.random() * (n - m + 1) + m)
+        }
+        var arr = ['张三', '李四', '王五', '秦六', '王二', '陈大'];
+        console.log(arr[randomNum(0, arr.length - 1)]);
+</script>
+//
+<input type="button" value="开始计数" onclick="Start()">
+    <input type="text" id="num">
+    <input type="button" value="停止计数" onclick="Stop()">
+    <script>
+        var timer = null, a = 0
+        function time() {
+            document.getElementById('num').value = a
+            a = a + 2
+        }
+        function Start() {
+            timer = setInterval(time, 2000)
+        }
+        function Stop() {
+            clearInterval(timer)
+        }
+    </script>

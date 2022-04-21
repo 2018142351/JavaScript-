@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Person() {
+            var name = 'Jim';
+            this.getName = function () {
+                return name;
+            };
+        }
+        var p = new Person();//创建实例对象p
+        console.log(p.name);//访问私有成员
+        p.getName();//访问对外开放的成员
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<u1>
+    <li id="li1">1</li>
+    <li>2</li>
+    <LI>3</LI>
+</u1>
+
+<script>
+
+    var u1 = document.querySelector('u1')
+    u1.addEventListener('click', function (e) {
+        console.log(e)
+        console.log(event)
+        console.log(this)
+        console.log(e.target)
+    })
+    var li = document.querySelector('#li')
+    li1.addEventListener('click', function (e) {
+        e.stopPropagation()
+    })
+
+</script>

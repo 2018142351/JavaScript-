@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- P35编程实现功能：用户输入圆的半径，计算圆的周长和面积。 -->
+    <div>
+        <p>圆的半径:<input id="r" type="text"></p>>
+        <p>圆的周长:<input id="cir" type="text"></p>
+        <p>圆的面积:<input id="area" type="text"></p>
+    </div>
+    <script>
+        var r = prompt('请输入圆的半径');
+        r = parseFloat(r) && Number(r);//获取输入的纯数字，其余情况皆转化为NaN
+        if (!isNaN(r)) {//获取用户的输入是否是数值
+            var cir = 2 * Math.PI * r
+            var area = Math.PI * r * r
+            document.getElementById('r').value = r;
+            document.getElementById('cir').value = cir.toFixed(2);
+            document.getElementById('area').value = area.toFixed(2);
+        }
+        else {
+            alert('请输入正确的数字');
+        }
+
+    </script>
+
+</body>
+
+</html>

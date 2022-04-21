@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- for (初始化变量; 条件表达式; 操作表达式) {//循环体} -->
+    <!-- 5. 编程实现功能：
+    要求用户输入班级人数，之后依次输入每个学生的成绩，
+    最后打印出该班级总的成绩以及平均成绩。 -->
+    <script>
+        var num = prompt('请输入班级总的人数:');// num 班级总的人数
+        var sum = 0;//总成绩
+        var average = 0;//平均成绩
+        for (var i = 1; i <= num; i++) {
+            var score = prompt('请输入第' + i + '个学生的成绩');
+            //这里接收的是str，必须转换为数值
+            sum = sum + parseFloat(score);
+        }
+        average = sum / num;
+        alert('班级总的成绩是:' + sum);
+        alert('班级总的平均成绩是:' + average);
+
+    </script>
+</body>
+
+</html>

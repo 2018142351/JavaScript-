@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //转换前
+        // var a = 18;
+        // fl();
+        // function fl() {
+        //     var b = 9;
+        //     console.log(a);
+        //     console.log(b);
+        //     var a = '123';
+        // }
+        //转换后
+        var a
+        function fl() {
+            var b
+            var a
+            b = 9;
+            console.log(a);
+            console.log(b);
+            a = '123';
+        }
+        a = 18;
+        fl();
+    </script>
+</body>
+
+</html>

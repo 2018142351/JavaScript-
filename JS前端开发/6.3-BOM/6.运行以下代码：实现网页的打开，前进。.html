@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type=" button" value="前进" onclick="goForward()">
+    <input type=" button" value="新网页" onclick="newPage()">
+    <script>
+        function newPage() {    //打开一个新文档
+            window.location.assign('show.html');
+        }
+        function goForward() {  //前进
+            history.go(1);
+        }
+    </script>
+</body>
+
+</html>

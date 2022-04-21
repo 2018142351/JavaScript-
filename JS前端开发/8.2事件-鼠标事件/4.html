@@ -1,0 +1,38 @@
+<style>
+    #red {
+        background: red;
+        width: 120px;
+        height: 120px;
+    }
+
+    #green {
+        background: green;
+        width: 80px;
+        height: 80px;
+    }
+
+    #yellow {
+        background: yellow;
+        width: 40px;
+        height: 40px;
+    }
+</style>
+
+<div id="red">
+    <div id="green">
+        <div id="yellow">
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var red = document.getElementById('red');
+    var green = document.getElementById('green');
+    var yellow = document.getElementById('yellow');
+
+    red.onclick = function () { console.log('red'); }
+    green.onclick = function () { console.log('green'); }
+    yellow.onclick = function () { console.log('yellow'); }
+
+</script>

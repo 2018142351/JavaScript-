@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // 创建数组
+        var arr = ['a', 'b', 'd', 'd', 'c', 'd', 'd'];
+        // 待查找的元素
+        var search = 'd';
+        // nwarr保存search在arr中的下标，i用于指定查找位置，j用于设置newarr的下标
+        var newarr = [], i = j = 0;
+
+        while (i < arr.length) {
+            // 在arr中从i开始查找search，查找到第一个停止，返回对应的下标，没有找到返回-1
+            var res = arr.indexOf(search, i);
+            // 在arr中找到search
+            if (res !== -1) {
+                newarr[j] = res; 	// 将当前查找的元素下标保存到newarr中
+                i = res + 1;		// 从新指定查找的位置
+                ++j;				// 改变newarr的下标
+            }
+        }
+        console.log('arr中元素d出现的次数:' + newarr.length + '；对应的所有索引下标:' + newarr);
+
+
+
+    </script>
+</body>
+
+</html>

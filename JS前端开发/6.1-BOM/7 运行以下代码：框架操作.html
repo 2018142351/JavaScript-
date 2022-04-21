@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <iframe name=" frame01"></iframe>
+    <iframe name=" frame02"></iframe>
+    <iframe name=" frame03"></iframe>
+</body>
+<script>
+    //方式1:
+    window.frames['frame01'].ducument.write('frame01 text.');
+
+    window.frames['frame02'].ducument.write('frame02 text.');
+
+    window.frames[2].ducument.write('frame03 text.');
+</script>
+
+</html>

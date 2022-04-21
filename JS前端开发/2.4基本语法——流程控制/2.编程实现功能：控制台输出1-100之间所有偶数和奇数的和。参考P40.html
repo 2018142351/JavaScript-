@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //   for (初始化变量; 条件表达式; 操作表达式)
+        //  {//循环体}
+        // 2.编程实现功能：控制台输出1 - 100之间所有偶数和奇数的和。参考P40
+        var sum1 = 0;
+        var sum2 = 0;
+        for (var i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                sum1 = sum1 + i;
+            } else {
+                sum2 = sum2 + i;
+            }
+        }
+        console.log('偶数和为' + sum1);
+        console.log('奇数和为' + sum2);
+
+    </script>
+</body>
+
+</html>

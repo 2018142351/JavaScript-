@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //定义类
+        class Person {
+            constructor(name, age, gender) {//构造方法
+                this.name = name;//添加name属性
+                this.age = age;//添加age属性
+                this.gender = gender;//添加gender属性
+            }
+            introduce() {//定义introduce()方法
+                console.log('我是' + this.name + ',今年' + this.age + '岁。');
+            }
+        }
+        //实例化时会自动调用conctructor()构造方法
+        var p = new Person('Jim', 19, '男');
+        p.introduce();//输出结果：我是Jim，今年19岁
+    </script>
+
+</body>
+
+</html>
